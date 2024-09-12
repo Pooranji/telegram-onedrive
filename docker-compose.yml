@@ -8,7 +8,7 @@ services:
     # please read https://github.com/hlf20010508/telegram-onedrive#preparation before editing
 
     ports:
-      - xxxx:8080
+      - 8080:8080
 
     volumes:
       - telegram-onedrive-session:/telegram-onedrive/session
@@ -17,7 +17,7 @@ services:
       # - /path/to/*.key:/telegram-onedrive/server/ssl/server.key
 
     environment:
-      - server_uri=https://127.0.0.1:xxxx
+      - server_uri=https://127.0.0.1:8080
       - reverse_proxy=false
       - tg_bot_token=7443034654:AAH83ai22x0R_um_D4zHToFIiCAv8M1q4Co
       - tg_api_id=23940130
